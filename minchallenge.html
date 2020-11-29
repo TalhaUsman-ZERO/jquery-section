@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>jquery</title>
+        <script type="text/javascript" src="jquery.min.js"></script>
+
+        <style type="text/css">
+        
+        #hiddentext{
+            display:none;
+        }
+        
+        
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <p id="text">this is some text</p>
+        <button id="toggle" type="text">Toggle</button>
+
+        <!-- <p id="hiddentext">this text is hidden initially</p>
+        <button id="fadein" type="text">fade in</button> -->
+
+        <script type="text/javascript">
+
+        // $("#fadeout").click(function(){
+        //     $("#text").fadeOut("slow");
+        // })
+
+        // $("#fadein").click(function(){
+        //     $("#hiddentext").fadeIn("slow");
+        // })
+
+        $("#toggle").click(function(){
+              
+              if($("#text").css("display")=="none"){
+                  $("#text").fadeIn();
+              } else{
+                  $("#text").fadeOut();
+              }
+         
+        })
+
+        </script>
+    </body>
+</html>
